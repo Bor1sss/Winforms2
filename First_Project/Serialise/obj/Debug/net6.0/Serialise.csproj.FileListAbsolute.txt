@@ -1,0 +1,17 @@
+D:\1STEP\First_Project\Serialise\bin\Debug\net6.0\Serialise.deps.json
+D:\1STEP\First_Project\Serialise\bin\Debug\net6.0\Serialise.dll
+D:\1STEP\First_Project\Serialise\bin\Debug\net6.0\Serialise.pdb
+D:\1STEP\First_Project\Serialise\bin\Debug\net6.0\Ilog.dll
+D:\1STEP\First_Project\Serialise\bin\Debug\net6.0\Storage.dll
+D:\1STEP\First_Project\Serialise\bin\Debug\net6.0\Storage.pdb
+D:\1STEP\First_Project\Serialise\bin\Debug\net6.0\Ilog.pdb
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.csproj.AssemblyReference.cache
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.AssemblyInfoInputs.cache
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.AssemblyInfo.cs
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.csproj.CoreCompileInputs.cache
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.csproj.CopyComplete
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.dll
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\refint\Serialise.dll
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\Serialise.pdb
+D:\1STEP\First_Project\Serialise\obj\Debug\net6.0\ref\Serialise.dll

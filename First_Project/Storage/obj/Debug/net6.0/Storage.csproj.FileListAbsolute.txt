@@ -1,0 +1,15 @@
+D:\1STEP\First_Project\Storage\bin\Debug\net6.0\Storage.deps.json
+D:\1STEP\First_Project\Storage\bin\Debug\net6.0\Storage.dll
+D:\1STEP\First_Project\Storage\bin\Debug\net6.0\Storage.pdb
+D:\1STEP\First_Project\Storage\bin\Debug\net6.0\Ilog.dll
+D:\1STEP\First_Project\Storage\bin\Debug\net6.0\Ilog.pdb
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.csproj.AssemblyReference.cache
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.AssemblyInfoInputs.cache
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.AssemblyInfo.cs
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.csproj.CoreCompileInputs.cache
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.csproj.CopyComplete
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.dll
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\refint\Storage.dll
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\Storage.pdb
+D:\1STEP\First_Project\Storage\obj\Debug\net6.0\ref\Storage.dll

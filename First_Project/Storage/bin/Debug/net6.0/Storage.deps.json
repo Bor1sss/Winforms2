@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Storage/1.0.0": {
+        "dependencies": {
+          "Ilog": "1.0.0"
+        },
+        "runtime": {
+          "Storage.dll": {}
+        }
+      },
+      "Ilog/1.0.0": {
+        "runtime": {
+          "Ilog.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Storage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ilog/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

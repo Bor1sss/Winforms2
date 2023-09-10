@@ -1,0 +1,11 @@
+D:\1STEP\First_Project\Ilog\bin\Debug\net6.0\Ilog.deps.json
+D:\1STEP\First_Project\Ilog\bin\Debug\net6.0\Ilog.dll
+D:\1STEP\First_Project\Ilog\bin\Debug\net6.0\Ilog.pdb
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\Ilog.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\Ilog.AssemblyInfoInputs.cache
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\Ilog.AssemblyInfo.cs
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\Ilog.csproj.CoreCompileInputs.cache
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\Ilog.dll
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\refint\Ilog.dll
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\Ilog.pdb
+D:\1STEP\First_Project\Ilog\obj\Debug\net6.0\ref\Ilog.dll
