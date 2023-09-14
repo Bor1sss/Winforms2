@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1STEP\\First_Project\\Serialise\\Serialise.csproj",
+      "projectUniqueName": "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\Serialise.csproj",
       "projectName": "Serialise",
-      "projectPath": "D:\\1STEP\\First_Project\\Serialise\\Serialise.csproj",
+      "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\Serialise.csproj",
       "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-      "outputPath": "D:\\1STEP\\First_Project\\Serialise\\obj\\",
+      "outputPath": "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -76,8 +76,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\1STEP\\First_Project\\Storage\\Storage.csproj": {
-              "projectPath": "D:\\1STEP\\First_Project\\Storage\\Storage.csproj"
+            "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj": {
+              "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj"
             }
           }
         }

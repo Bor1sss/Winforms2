@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1STEP\\First_Project\\First_Project\\First_Project.csproj": {}
+    "D:\\1STEP\\Winforms2\\First_Project\\First_Project\\First_Project.csproj": {}
   },
   "projects": {
-    "D:\\1STEP\\First_Project\\First_Project\\First_Project.csproj": {
+    "D:\\1STEP\\Winforms2\\First_Project\\First_Project\\First_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\First_Project\\First_Project\\First_Project.csproj",
+        "projectUniqueName": "D:\\1STEP\\Winforms2\\First_Project\\First_Project\\First_Project.csproj",
         "projectName": "First_Project",
-        "projectPath": "D:\\1STEP\\First_Project\\First_Project\\First_Project.csproj",
+        "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\First_Project\\First_Project.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\First_Project\\First_Project\\obj\\",
+        "outputPath": "D:\\1STEP\\Winforms2\\First_Project\\First_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\1STEP\\First_Project\\Ilog\\Ilog.csproj": {
-                "projectPath": "D:\\1STEP\\First_Project\\Ilog\\Ilog.csproj"
+              "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\Ilog.csproj": {
+                "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\Ilog.csproj"
               },
-              "D:\\1STEP\\First_Project\\Serialise\\Serialise.csproj": {
-                "projectPath": "D:\\1STEP\\First_Project\\Serialise\\Serialise.csproj"
+              "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\Serialise.csproj": {
+                "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\Serialise.csproj"
               },
-              "D:\\1STEP\\First_Project\\Storage\\Storage.csproj": {
-                "projectPath": "D:\\1STEP\\First_Project\\Storage\\Storage.csproj"
+              "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj": {
+                "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\1STEP\\First_Project\\Ilog\\Ilog.csproj": {
+    "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\Ilog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\First_Project\\Ilog\\Ilog.csproj",
+        "projectUniqueName": "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\Ilog.csproj",
         "projectName": "Ilog",
-        "projectPath": "D:\\1STEP\\First_Project\\Ilog\\Ilog.csproj",
+        "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\Ilog.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\First_Project\\Ilog\\obj\\",
+        "outputPath": "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -132,14 +132,14 @@
         }
       }
     },
-    "D:\\1STEP\\First_Project\\Serialise\\Serialise.csproj": {
+    "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\Serialise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\First_Project\\Serialise\\Serialise.csproj",
+        "projectUniqueName": "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\Serialise.csproj",
         "projectName": "Serialise",
-        "projectPath": "D:\\1STEP\\First_Project\\Serialise\\Serialise.csproj",
+        "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\Serialise.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\First_Project\\Serialise\\obj\\",
+        "outputPath": "D:\\1STEP\\Winforms2\\First_Project\\Serialise\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -160,8 +160,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\1STEP\\First_Project\\Storage\\Storage.csproj": {
-                "projectPath": "D:\\1STEP\\First_Project\\Storage\\Storage.csproj"
+              "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj": {
+                "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj"
               }
             }
           }
@@ -195,14 +195,14 @@
         }
       }
     },
-    "D:\\1STEP\\First_Project\\Storage\\Storage.csproj": {
+    "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\First_Project\\Storage\\Storage.csproj",
+        "projectUniqueName": "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj",
         "projectName": "Storage",
-        "projectPath": "D:\\1STEP\\First_Project\\Storage\\Storage.csproj",
+        "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Storage\\Storage.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\First_Project\\Storage\\obj\\",
+        "outputPath": "D:\\1STEP\\Winforms2\\First_Project\\Storage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -223,8 +223,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\1STEP\\First_Project\\Ilog\\Ilog.csproj": {
-                "projectPath": "D:\\1STEP\\First_Project\\Ilog\\Ilog.csproj"
+              "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\Ilog.csproj": {
+                "projectPath": "D:\\1STEP\\Winforms2\\First_Project\\Ilog\\Ilog.csproj"
               }
             }
           }
