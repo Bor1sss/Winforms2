@@ -18,13 +18,15 @@ namespace XO
         {
             bool isPlayer = false; 
             InitializeComponent();
+            checkBox1.Checked = true;
+            checkBox1.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             IModel model;
             AiModel aiModel;
-            model = new ModelXo();
+            
             if (radioButton1.Checked)
             {
                 aiModel = new AiXO(false);
@@ -32,6 +34,14 @@ namespace XO
             else 
             {
                 aiModel = new AiXO(true);
+            }
+            if (checkBox1.Checked)
+            {
+                model = new ModelXo(true);
+            }
+            else
+            {
+                model = new ModelXo(false);
             }
             Form1 View = new Form1();
             Presenter presenter = new Presenter(model, View,aiModel);
@@ -43,7 +53,17 @@ namespace XO
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-           
+            if (radioButton1.Checked)
+            {
+               checkBox1.Checked = true;
+               checkBox1.Enabled = false;
+            }
+            else
+            {
+                checkBox1.Checked = true;
+                checkBox1.Enabled = true;
+            }
+
         }
     }
 }

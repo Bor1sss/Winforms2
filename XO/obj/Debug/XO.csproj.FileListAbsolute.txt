@@ -9,3 +9,14 @@ D:\1STEP\XO\obj\Debug\XO.csproj.CoreCompileInputs.cache
 D:\1STEP\XO\obj\Debug\XO.exe
 D:\1STEP\XO\obj\Debug\XO.pdb
 D:\1STEP\XO\obj\Debug\XO.Form2.resources
+D:\1STEP\Winforms2\XO\bin\Debug\XO.exe.config
+D:\1STEP\Winforms2\XO\bin\Debug\XO.exe
+D:\1STEP\Winforms2\XO\bin\Debug\XO.pdb
+D:\1STEP\Winforms2\XO\obj\Debug\XO.csproj.AssemblyReference.cache
+D:\1STEP\Winforms2\XO\obj\Debug\XO.Form1.resources
+D:\1STEP\Winforms2\XO\obj\Debug\XO.Form2.resources
+D:\1STEP\Winforms2\XO\obj\Debug\XO.Properties.Resources.resources
+D:\1STEP\Winforms2\XO\obj\Debug\XO.csproj.GenerateResource.cache
+D:\1STEP\Winforms2\XO\obj\Debug\XO.csproj.CoreCompileInputs.cache
+D:\1STEP\Winforms2\XO\obj\Debug\XO.exe
+D:\1STEP\Winforms2\XO\obj\Debug\XO.pdb

@@ -30,10 +30,10 @@ namespace XO
         public char[,] field { set; get; }
         public int[] cords { set; get; }
 
-        public ModelXo()
+        public ModelXo(bool p)
         {
             field = new char[3, 3];
-            isPlayer1 = true;
+            isPlayer1 = p;
             cords = new int[2];
             isWin = false;
             for (int i = 0,k=0; i < 3; i++)
@@ -54,6 +54,7 @@ namespace XO
         }
         public void GameStart()
         {
+            CheckForWin();
 
             if (isPlayer1)
             {
@@ -91,7 +92,7 @@ namespace XO
         }
         public void CheckForWin()
         {
-            CheckForPossibility();
+           
             if (isPossible)
             {
                 //Horizontal
@@ -112,11 +113,11 @@ namespace XO
                 {
                     isWin = true;
                 }
-                else if ((field[0, 1] == field[1, 1] && field[1, 0] == field[2, 1]))
+                else if ((field[0, 1] == field[1, 1] && field[1, 1] == field[2, 1]))
                 {
                     isWin = true;
                 }
-                else if ((field[0, 2] == field[1, 2] && field[1, 0] == field[2, 2]))
+                else if ((field[0, 2] == field[1, 2] && field[1, 2] == field[2, 2]))
                 {
                     isWin = true;
                 }
@@ -138,7 +139,9 @@ namespace XO
             {
                 isWin = null;
             }
+            CheckForPossibility();
         }
+
 
     }
 

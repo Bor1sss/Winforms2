@@ -40,223 +40,247 @@ namespace XO
                 if (field[0, 2] != 'O'&& field[0,2]!='X')
                 {
                     X=0; Y=2;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[0, 1] == field[0, 2])
+             if (field[0, 1] == field[0, 2])
             {
                 if (field[0, 0] != 'O' && field[0,0] != 'X')
                 {
                     X = 0; Y = 0;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[0, 0] == field[0, 2])
+             if (field[0, 0] == field[0, 2])
             {
                 if (field[0, 1] != 'O' && field[0, 1] != 'X')
                 {
                     X = 0; Y = 1;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[1, 0] == field[1, 1])
+             if (field[1, 0] == field[1, 1])
             {
                 if (field[1, 2] != 'O' && field[1, 2] != 'X')
                 {
                     X = 1; Y = 2;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[1, 1] == field[1, 2])
+             if (field[1, 1] == field[1, 2])
             {
                 if (field[1, 0] != 'O' && field[1, 0] != 'X')
                 {
                     X = 1; Y = 0;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[1, 0] == field[1, 2])
+             if (field[1, 0] == field[1, 2])
             {
                 if (field[1, 1] != 'O' && field[1, 1] != 'X')
                 {
                     X = 1; Y = 1;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[2, 0] == field[2, 1])
+             if (field[2, 0] == field[2, 1])
             {
                 if (field[2, 2] != 'O' && field[2, 2] != 'X')
                 {
                     X = 2; Y = 2;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[2, 1] == field[2, 2])
+             if (field[2, 1] == field[2, 2])
             {
                 if (field[2, 0] != 'O' && field[2, 0] != 'X')
                 {
                     X = 2; Y = 0;
+                    GenerateRandom = false;
                 }
                 else
                 {
                     GenerateRandom = true;
                 }
             }
-            else if (field[2,0] == field[2, 2])
+             if (field[2,0] == field[2, 2])
             {
                 if (field[2, 1] != 'O' && field[2, 1] != 'X')
                 {
                     X = 2; Y = 1;
+                    GenerateRandom = false;
                 }
+                else
                 { GenerateRandom = true; }
             }
 
             // Проверка вертикалей
-            else if (field[0, 0] == field[1, 0])
+             if (field[0, 0] == field[1, 0])
             {
                 if (field[2, 0] != 'O' && field[2,0]!='X')
                 {
                     X = 2; Y = 0;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[1, 0] == field[2, 0])
+             if (field[1, 0] == field[2, 0])
             {
                 if (field[0, 0] != 'O' && field[0, 0] != 'X')
                 {
                     X = 0; Y = 0;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[0, 0] == field[2, 0])
+             if (field[0, 0] == field[2, 0])
             {
                 if (field[1, 0] != 'O' && field[1, 0] != 'X')
                 {
                     X = 1; Y = 0;
+                     GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
 
 
-            else if (field[0, 1] == field[1, 1])
+             if (field[0, 1] == field[1, 1])
             {
                 if (field[2, 1] != 'O' && field[2, 1] != 'X')
                 {
                     X = 2; Y = 1;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[1, 1] == field[2, 1])
+             if (field[1, 1] == field[2, 1])
             {
                 if (field[0, 1] != 'O' && field[0, 1] != 'X')
                 {
                     X = 0; Y = 1;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[0, 1] == field[2, 1])
+             if (field[0, 1] == field[2, 1])
             {
                 if (field[1, 1] != 'O' && field[1, 1] != 'X')
                 {
                     X = 1; Y = 1;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
 
-            else if (field[0, 2] == field[1, 2])
+             if (field[0, 2] == field[1, 2])
             {
                 if (field[2, 2] != 'O' && field[2, 2] != 'X')
                 {
                     X = 2; Y = 2;
+                    GenerateRandom = false;
                 }
                     else { GenerateRandom = true; }
             }
-            else if (field[1, 2] == field[2, 2])
+             if (field[1, 2] == field[2, 2])
             {
                 if (field[0, 2] != 'O' && field[0, 2] != 'X')
                 {
                     X = 0; Y = 2;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[0, 2] == field[2, 2])
+             if (field[0, 2] == field[2, 2])
             {
                 if (field[1, 2] != 'O' && field[1, 2] != 'X')
                 {
                     X = 1; Y = 2;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
             // Проверка диагоналей
-            else if (field[0, 0] == field[1, 1])
+             if (field[0, 0] == field[1, 1])
             {
                 if (field[2, 2] != 'O' && field[2, 2] != 'X')
                 {
                     X = 2; Y = 2;
+                    GenerateRandom = false;
                 }
                     else { GenerateRandom = true; }
             }
-            else if (field[1, 1] == field[2, 2])
+             if (field[1, 1] == field[2, 2])
             {
                 if (field[0, 0] != 'O' && field[0, 0] != 'X')
                 {
                     X = 0; Y = 0;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[0, 0] == field[2, 2])
+            if (field[0, 0] == field[2, 2])
             {
                 if (field[1, 1] != 'O' && field[1, 1] != 'X')
                 {
                     X = 1; Y = 1;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
 
-            else if (field[0, 2] == field[1, 1])
+            if (field[0, 2] == field[1, 1])
             {
                 if (field[2, 0] != 'O' && field[2, 0] != 'X')
                 {
                     X = 2; Y = 0;
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[1, 1] == field[2, 0])
+            if (field[1, 1] == field[2, 0])
             {
                 if (field[0, 2] != 'O' && field[0, 2] != 'X')
                 {
                     X = 0; Y = 2;
-                    GenerateRandom = true;
+                    GenerateRandom = false;
+
                 }
                 else { GenerateRandom = true; }
             }
-            else if (field[2, 0] == field[0, 2])
+            if (field[2, 0] == field[0, 2])
             {
                 if (field[1, 1] != 'O' && field[1, 1] != 'X')
                 {
                     X = 1; Y = 1;
-                    
+                    GenerateRandom = false;
                 }
                 else { GenerateRandom = true; }
             }
@@ -267,11 +291,12 @@ namespace XO
 
             if (GenerateRandom)
             {
+                Random random = new Random();
                 while (true)
                 {
-                    Random random = new Random();
-                    X = random.Next(0, 2);
-                    Y = random.Next(0, 2);
+
+                    X = random.Next(3);
+                    Y = random.Next(3);
                     if (field[X, Y] != 'O' && field[X, Y] != 'X')
                     {
                         break;
