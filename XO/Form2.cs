@@ -20,6 +20,7 @@ namespace XO
             InitializeComponent();
             checkBox1.Checked = true;
             checkBox1.Enabled = false;
+            MaximizeBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

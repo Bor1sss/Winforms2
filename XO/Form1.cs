@@ -20,7 +20,7 @@ namespace XO
         {
     
             InitializeComponent();
-            
+            MaximizeBox = false;
             cords = new int[2];
             button1.Enabled = false;
             button2.Enabled = false;
