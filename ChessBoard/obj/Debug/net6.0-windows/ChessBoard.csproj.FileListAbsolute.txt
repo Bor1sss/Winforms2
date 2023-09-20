@@ -1,0 +1,16 @@
+D:\1STEP\Winforms2\ChessBoard\bin\Debug\net6.0-windows\ChessBoard.exe
+D:\1STEP\Winforms2\ChessBoard\bin\Debug\net6.0-windows\ChessBoard.deps.json
+D:\1STEP\Winforms2\ChessBoard\bin\Debug\net6.0-windows\ChessBoard.runtimeconfig.json
+D:\1STEP\Winforms2\ChessBoard\bin\Debug\net6.0-windows\ChessBoard.dll
+D:\1STEP\Winforms2\ChessBoard\bin\Debug\net6.0-windows\ChessBoard.pdb
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.Form1.resources
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.csproj.GenerateResource.cache
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.AssemblyInfoInputs.cache
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.AssemblyInfo.cs
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.csproj.CoreCompileInputs.cache
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.dll
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\refint\ChessBoard.dll
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.pdb
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ChessBoard.genruntimeconfig.cache
+D:\1STEP\Winforms2\ChessBoard\obj\Debug\net6.0-windows\ref\ChessBoard.dll
