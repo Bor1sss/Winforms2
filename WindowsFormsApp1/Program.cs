@@ -14,9 +14,13 @@ namespace WindowsFormsApp1
         [STAThread]
         static void Main()
         {
+         
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 form = new Form1();
+            Presenter presenter = new Presenter(new Books_Program(), form);
+            Application.Run(form);
+           
         }
     }
 }

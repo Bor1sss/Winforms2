@@ -16,14 +16,15 @@ namespace WindowsFormsApp1
         {
         
         List<Book> books { get; set; }
-        void Add_Author(int i, string a);
+        void Add_Author(string a);
         void Change_Author(int i, string a);
         void Delete_Author(int i);
-        void Add_BookName(string newBookName);
-        void Change_BookName(int i,string a);
-        void Delete_BookName(int i);
-        List<Book> Show_All();
-        List<Book> Show_BooksA(string A);
+        void Add_BookName(int i,string newBookName);
+        void Change_BookName(int i,string a, string curBook);
+        void Delete_BookName(int i, string BookName);
+        List<string> Show_All();
+        List<string> Show_AllAuthors();
+        List<string> Show_BooksA(string A);
 
      
         void SaveFile(string name);
@@ -42,32 +43,50 @@ namespace WindowsFormsApp1
         
         books=new List<Book>();
         }
-        public void Add_Author(int i,string newAuthor)
+        public void Add_Author(string newAuthor)
         {
             
-                if (i < 0 || i > books.Count()) { throw new Exception("Eror ror"); }
-                books[i].Author=newAuthor;
+               
+                books.Add(new Book("", "title", newAuthor));
 
 
-            
+
         }
 
-        public void Add_BookName(string newBookName)
+        public void Add_BookName(int i, string newA)
         {
-            books.Add(new Book(newBookName, "title", " "));
+          
+            if (i < 0 || i > books.Count()||books.Count<1) { throw new Exception("No Author Exist"); }
+
+            books[i].Name.Add(newA);
+            
+          
         }
 
         public void Change_Author(int i, string newAuthor)
         {
-            if (i < 0 || i > books.Count()) { throw new Exception("Wrong"); }
+            if (i < 0 || i > books.Count()||books.Count<1) { throw new Exception("Nothing happend"); }
             books[i].Author = newAuthor;
 
         }
 
-        public void Change_BookName(int i, string newBookName)
+        public void Change_BookName(int i, string newBookName,string curBook)
         {
-            if (i < 0 || i > books.Count()) { throw new Exception(); }
-            books[i].Name = newBookName;
+            if (i < 0 || i > books.Count() || books.Count < 1) { throw new Exception("Something went wrong"); }
+
+
+            foreach (var item in books)
+            {
+
+                if (item.Name.Contains(curBook))
+                {
+                    item.Name[item.Name.IndexOf(curBook)] = newBookName;
+                }
+
+
+            }
+
+
 
         }
 
@@ -77,14 +96,23 @@ namespace WindowsFormsApp1
         {
             
             if (i < 0 || i > books.Count()||books.Count()==0) { throw new Exception("Nothing heppend"); }
-            books[i].Author=" ";
+            books.RemoveAt(i);
 
         }
 
-        public void Delete_BookName(int i)
+        public void Delete_BookName(int i,string BookName)
         {
-            if (i < 0 || i > books.Count()) { throw new Exception("Something went wrong"); }
-            books.RemoveAt(i);
+            if (i > books.Count()) { throw new Exception("Something went wrong"); }
+        
+                foreach (var item in books)
+                {
+                    if (item.Name.Contains(BookName))
+                    {
+                        item.Name.Remove(BookName);
+                    }
+                }
+      
+            
 
 
         }
@@ -101,24 +129,56 @@ namespace WindowsFormsApp1
         {
             string json=JsonSerializer.Serialize(books);
             File.WriteAllText($"{name}.json", json);
-
+         
 
 
         }
 
-        public List<Book> Show_All()
+        public List<string> Show_All()
         {
-            return books;
-        }
-
-        public List<Book> Show_BooksA(string A)
-        {
-            List<Book> list = new List<Book>();
+            List<string> list = new List<string>();
             foreach (var item in books)
             {
-                if (item.Author.Contains(A))
+                foreach (var item2 in item.Name)
                 {
-                    list.Add(item);
+                    if (item2 != "")
+                    {
+                        list.Add(item2);
+                    }
+                }
+                    
+                
+            }
+            return list;
+        }
+
+        public List<string> Show_BooksA(string a)
+        {
+            List<string> list = new List<string>();
+            foreach (var item in books)
+            {
+                foreach (var item2 in item.Name)
+                {
+                    if (item.Author.Contains(a))
+                    {
+                        if (item2 != "")
+                        {
+                            list.Add(item2);
+                        }
+                    }
+                }
+              
+            }
+            return list;
+        }
+        public List<string> Show_AllAuthors()
+        {
+            List<string> list = new List<string>();
+            foreach (var item in books)
+            {
+                if (!list.Contains(item.Author))
+                {
+                    list.Add(item.Author);
                 }
             }
             return list;

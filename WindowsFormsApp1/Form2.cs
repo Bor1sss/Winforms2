@@ -14,24 +14,32 @@ namespace WindowsFormsApp1
     {
 
 
-        public Form2(ref string T)
+        public Form2(string s)
         {
-            MaximizeBox = false;
+            
+           
             InitializeComponent();
-            Text = T;
+            label1.Text = s;
         }
-
-        public string Text {  get; set; }
-
+        public string newText {  get;set; }
+      
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Text = textBox1.Text;
+            DialogResult = DialogResult.Yes;
+            newText = textBox1.Text;
             this.Close();
+
             
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            DialogResult=DialogResult.No;
+            this.Close();
+        }
     }
 
 

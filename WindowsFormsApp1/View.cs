@@ -21,12 +21,17 @@ namespace WindowsFormsApp1
         event EventHandler<EventArgs> SaveFile;
         event EventHandler<EventArgs> LoadFile;
 
-        string Text { get; set; }
-        int index { get; set; }
-
+      
+         int indexBook { get; set; }
+         int indexAuthor { get; set; }
+            
+            string Text {  get; set; }  
+            string curAuthor {  get; set; }  
+            string curBook {  get; set; }  
         void ShowErrorMessages(string message);
 
-        void WriteAllBooks(List<Book> list);
+        void WriteAllBooks(List<string> list);
+        void WriteAllAuthors(List<string> list);
 
     }
 }

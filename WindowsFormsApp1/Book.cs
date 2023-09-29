@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
     public class Book
     {
         [DataMember]
-        public string Name { get; set; }
+        public List<string> Name { get; set; }
         [DataMember]
         public string Title { get; set; }
         [DataMember]
@@ -20,13 +20,13 @@ namespace WindowsFormsApp1
 
         public Book()
         {
-            Name = "";
+            Name=new List<string>();
             Title = "";
             Author = "";
         }
         public Book(string name, string title, string author)
         {
-            Name = name;
+            Name = new List<string>();
             Title = title;
             Author = author;
         }
