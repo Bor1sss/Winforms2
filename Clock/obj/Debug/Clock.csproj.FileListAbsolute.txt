@@ -1,0 +1,10 @@
+D:\1STEP\Winforms2\Clock\bin\Debug\Clock.exe.config
+D:\1STEP\Winforms2\Clock\bin\Debug\Clock.exe
+D:\1STEP\Winforms2\Clock\bin\Debug\Clock.pdb
+D:\1STEP\Winforms2\Clock\obj\Debug\Clock.csproj.AssemblyReference.cache
+D:\1STEP\Winforms2\Clock\obj\Debug\Clock.Form1.resources
+D:\1STEP\Winforms2\Clock\obj\Debug\Clock.Properties.Resources.resources
+D:\1STEP\Winforms2\Clock\obj\Debug\Clock.csproj.GenerateResource.cache
+D:\1STEP\Winforms2\Clock\obj\Debug\Clock.csproj.CoreCompileInputs.cache
+D:\1STEP\Winforms2\Clock\obj\Debug\Clock.exe
+D:\1STEP\Winforms2\Clock\obj\Debug\Clock.pdb
