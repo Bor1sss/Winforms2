@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPF_FIRST.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FIRST"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="536">
+   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <WrapPanel>
+            <Button Height="20" Width="50" TextBlock.Foreground="Navy" Margin="2 2 2 2">Navy</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Blue" Margin="2 2 2 2">Blue</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Aqua" Margin="2 2 2 2">Aqua</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Teal" Margin="2 2 2 2">Teal</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Olive" Margin="2 2 2 2">Olive</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Green" Margin="2 2 2 2">Green</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Lime" Margin="2 2 2 2">Lime</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Yellow" Margin="2 2 2 2">Yellow</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Orange" Margin="2 2 2 2">Orange</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Red" Margin="2 2 2 2">Red</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Maroon" Margin="2 2 2 2">Maroon</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Fuchsia" Margin="2 2 2 2">Fuchisia</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Purple" Margin="2 2 2 2">Purple</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Black" Margin="2 2 2 2">bLACK</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Silver" Margin="2 2 2 2">Silver</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="Gray" Margin="2 2 2 2">Grey</Button>
+            <Button Height="20" Width="50" TextBlock.Foreground="White" Margin="2 2 2 2">White</Button>
+            
+            
+            
+            
+        </WrapPanel>
+
+    </Grid>
+</Window>
