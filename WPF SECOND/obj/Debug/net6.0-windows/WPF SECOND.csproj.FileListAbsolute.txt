@@ -1,0 +1,20 @@
+D:\1STEP\WPF SECOND\bin\Debug\net6.0-windows\WPF SECOND.exe
+D:\1STEP\WPF SECOND\bin\Debug\net6.0-windows\WPF SECOND.deps.json
+D:\1STEP\WPF SECOND\bin\Debug\net6.0-windows\WPF SECOND.runtimeconfig.json
+D:\1STEP\WPF SECOND\bin\Debug\net6.0-windows\WPF SECOND.dll
+D:\1STEP\WPF SECOND\bin\Debug\net6.0-windows\WPF SECOND.pdb
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\App.g.cs
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND_MarkupCompile.cache
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND_MarkupCompile.lref
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\MainWindow.baml
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.g.resources
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.AssemblyInfoInputs.cache
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.AssemblyInfo.cs
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.csproj.CoreCompileInputs.cache
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.dll
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\refint\WPF SECOND.dll
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.pdb
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\WPF SECOND.genruntimeconfig.cache
+D:\1STEP\WPF SECOND\obj\Debug\net6.0-windows\ref\WPF SECOND.dll
