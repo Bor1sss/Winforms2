@@ -1,0 +1,20 @@
+D:\1STEP\WPF THIRD\bin\Debug\net6.0-windows\WPF THIRD.exe
+D:\1STEP\WPF THIRD\bin\Debug\net6.0-windows\WPF THIRD.deps.json
+D:\1STEP\WPF THIRD\bin\Debug\net6.0-windows\WPF THIRD.runtimeconfig.json
+D:\1STEP\WPF THIRD\bin\Debug\net6.0-windows\WPF THIRD.dll
+D:\1STEP\WPF THIRD\bin\Debug\net6.0-windows\WPF THIRD.pdb
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\App.g.cs
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD_MarkupCompile.cache
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD_MarkupCompile.lref
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\MainWindow.baml
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.g.resources
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.AssemblyInfoInputs.cache
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.AssemblyInfo.cs
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.csproj.CoreCompileInputs.cache
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.dll
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\refint\WPF THIRD.dll
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.pdb
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\WPF THIRD.genruntimeconfig.cache
+D:\1STEP\WPF THIRD\obj\Debug\net6.0-windows\ref\WPF THIRD.dll
