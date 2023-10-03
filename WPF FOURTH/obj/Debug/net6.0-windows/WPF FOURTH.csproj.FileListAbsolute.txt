@@ -1,0 +1,20 @@
+D:\1STEP\WPF FOURTH\bin\Debug\net6.0-windows\WPF FOURTH.exe
+D:\1STEP\WPF FOURTH\bin\Debug\net6.0-windows\WPF FOURTH.deps.json
+D:\1STEP\WPF FOURTH\bin\Debug\net6.0-windows\WPF FOURTH.runtimeconfig.json
+D:\1STEP\WPF FOURTH\bin\Debug\net6.0-windows\WPF FOURTH.dll
+D:\1STEP\WPF FOURTH\bin\Debug\net6.0-windows\WPF FOURTH.pdb
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\App.g.cs
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH_MarkupCompile.cache
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH_MarkupCompile.lref
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\MainWindow.baml
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.g.resources
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.GeneratedMSBuildEditorConfig.editorconfig
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.AssemblyInfoInputs.cache
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.AssemblyInfo.cs
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.csproj.CoreCompileInputs.cache
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.dll
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\refint\WPF FOURTH.dll
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.pdb
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\WPF FOURTH.genruntimeconfig.cache
+D:\1STEP\WPF FOURTH\obj\Debug\net6.0-windows\ref\WPF FOURTH.dll
