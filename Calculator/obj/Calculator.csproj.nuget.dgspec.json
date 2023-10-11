@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1STEP\\Calculator\\Calculator.csproj": {}
+    "D:\\1STEP\\Winforms2\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "D:\\1STEP\\Calculator\\Calculator.csproj": {
+    "D:\\1STEP\\Winforms2\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "D:\\1STEP\\Winforms2\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "D:\\1STEP\\Calculator\\Calculator.csproj",
+        "projectPath": "D:\\1STEP\\Winforms2\\Calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\Calculator\\obj\\",
+        "outputPath": "D:\\1STEP\\Winforms2\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

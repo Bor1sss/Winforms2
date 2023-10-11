@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="450" MinHeight="300" MinWidth="300">
-  
+ 
     <Grid>
        
         <DockPanel>
@@ -27,7 +27,9 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-                <Button x:Name="CE" Height="Auto" Grid.Column="0" Grid.Row="0" FontSize="24" Click="CE_Click">CE</Button>
+
+                <Button Template="{StaticResource ButtStyle}" x:Name="CE" Height="Auto" Grid.Column="0" Grid.Row="0" FontSize="24" Click="CE_Click">CE</Button>
+             
                 <Button x:Name="C" Height="Auto" Grid.Column="1" Grid.Row="0" FontSize="24" Click="C_Click">C</Button>
                 <Button x:Name="LT" Height="Auto" Grid.Column="2" Grid.Row="0" FontSize="24" Click="LT_Click">&lt;</Button>
                 <Button x:Name="SLASH" Height="Auto" Grid.Column="3" Grid.Row="0" FontSize="24" Click="SLASH_Click">/</Button>
