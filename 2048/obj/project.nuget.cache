@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+tz/um1Zd/AR1/CHX2V3UYFsGLqdUrkF2ge5z4yXrToMEQMSgYTSZPlTl4i/4g93EqcuyvNgxIQ5Eye9QF5HDw==",
+  "dgSpecHash": "3ks1eEjFQj63VOITTgJIyUoLbMM0FwsoAImZDhL4OKiZIvZIFgGHxEcMlZgQfHU9N9BpSHw8W2bt7sfh2R3i9Q==",
   "success": true,
-  "projectFilePath": "D:\\1STEP\\2048\\2048.csproj",
+  "projectFilePath": "D:\\1STEP\\Winforms2\\2048\\2048.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
