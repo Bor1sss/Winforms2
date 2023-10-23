@@ -1,0 +1,48 @@
+﻿<Window x:Class="BindingData.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingData"
+        mc:Ignorable="d"
+        Title="Window1" Height="220" Width="553" MinHeight="190" MinWidth="300" MaxHeight="220"  MaxWidth="553">
+    <Window.Resources>
+
+        <local:ContactList x:Key="ContactList" NameList="" SurnameList="" AdressList="" PhoneList=""/>
+        
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="141*"></ColumnDefinition>
+            <ColumnDefinition Width="200*"></ColumnDefinition>
+            <ColumnDefinition Width="82*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel  Margin="0,5,0,0" HorizontalAlignment="Right" Orientation="Vertical"  Grid.Column="0" >
+
+            <TextBox IsReadOnly="True" FontSize="20" Height="30" Margin="0 5 0 0" TextAlignment="Right" Text="Name" BorderThickness="0" ></TextBox>
+
+            <TextBox IsReadOnly="True" FontSize="20" Height="30" Margin="0 5 0 0" TextAlignment="Right" Text="Surname" BorderThickness="0"  ></TextBox>
+
+            <TextBox IsReadOnly="True"  FontSize="20" Height="30" Margin="0 5 0 0" TextAlignment="Right"  Text="Adress" BorderThickness="0"  ></TextBox>
+
+            <TextBox IsReadOnly="True" FontSize="20" Height="30" Margin="0 5 0 0" TextAlignment="Right" Text="Phone" BorderThickness="0"  ></TextBox>
+
+        </StackPanel>
+
+        <StackPanel Margin="5,0,0,0" HorizontalAlignment="Left" Orientation="Vertical"  Grid.Column="1" DataContext="{StaticResource ContactList}" >
+
+            <TextBox FontSize="20" Height="30" Margin="0 5 0 0" Name="tName" Width="150" Text="{Binding NameList}"></TextBox>
+
+            <TextBox FontSize="20" Height="30" Margin="0 5 0 0" Name="tSurname" Width="150" Text="{Binding SurnameList}"></TextBox>
+
+            <TextBox FontSize="20" Height="30" Margin="0 5 0 0" Name="tAddress" Width="150" Text="{Binding AdressList}"></TextBox>
+
+            <TextBox FontSize="20"  Height="30" Margin="0 5 0 0" Name="tPhone" Width="150" Text="{Binding PhoneList}" ></TextBox>
+            <StackPanel Orientation="Horizontal">
+                
+            <Button  x:Name="bt" Content="Добавить" Margin="15 5 0 0" Click="bt_Click" />
+            <Button  x:Name="bt_cancel" Content="Cancel" Margin="15 5 15 0" Click="bt_cancel_Click" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
