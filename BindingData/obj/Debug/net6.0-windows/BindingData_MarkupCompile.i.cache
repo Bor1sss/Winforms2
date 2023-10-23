@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\1STEP\BindingData\obj\Debug\net6.0-windows\
+D:\1STEP\Winforms2\BindingData\obj\Debug\net6.0-windows\
 BindingData
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\1STEP\BindingData\App.xaml
+D:\1STEP\Winforms2\BindingData\App.xaml
 21940794329
 
 6-1297305811
 194726069201
 MainWindow.xaml;Window1.xaml;
 
-True
+False
 

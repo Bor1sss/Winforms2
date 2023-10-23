@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1STEP\\BindingData\\BindingData.csproj": {}
+    "D:\\1STEP\\Winforms2\\BindingData\\BindingData.csproj": {}
   },
   "projects": {
-    "D:\\1STEP\\BindingData\\BindingData.csproj": {
+    "D:\\1STEP\\Winforms2\\BindingData\\BindingData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\BindingData\\BindingData.csproj",
+        "projectUniqueName": "D:\\1STEP\\Winforms2\\BindingData\\BindingData.csproj",
         "projectName": "BindingData",
-        "projectPath": "D:\\1STEP\\BindingData\\BindingData.csproj",
+        "projectPath": "D:\\1STEP\\Winforms2\\BindingData\\BindingData.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\BindingData\\obj\\",
+        "outputPath": "D:\\1STEP\\Winforms2\\BindingData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
