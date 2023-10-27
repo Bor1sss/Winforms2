@@ -99,6 +99,7 @@ namespace BindingData
 
         private void bt_cancel_Click(object sender, RoutedEventArgs e)
         {
+            contacts = null;
             this.Close();
         }
     }

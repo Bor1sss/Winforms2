@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Text.Json;
@@ -24,25 +26,71 @@ namespace BindingData
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
+
+
+   
+    public class AddCommand : ICommand
+    {
+        Action<object> _execute;
+        Predicate<object> _canExecute;
+        protected internal object sender;
+
+
+
+        public AddCommand(Action<object> execute, Predicate<object> canExecute)
+        {
+            _execute = execute ?? throw new ArgumentNullException("execute");
+            _canExecute = canExecute;
+        }
+
+        public event EventHandler CanExecuteChanged
+        {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
+
+        public bool CanExecute(object? parameter)
+        {
+            return _canExecute == null ? true : _canExecute(parameter);
+        }
+
+        public void Execute(object? parameter)
+        {
+            sender = parameter;
+            _execute(parameter);
+        }
+
+
+    }
+
+
+
     public partial class MainWindow : Window
     {
   
         public bool isChanging {  get; set; }
+
+
+        public ListBox ListBox { get; set; }
         public MainWindow()
         {
+
+            ListBox = ls;
             InitializeComponent();
             
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-          
-            
+      
+
 
         }
 
 
-
+/*
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             ContactList contactList = Resources["ContactList"] as ContactList;
@@ -59,27 +107,27 @@ namespace BindingData
         private void Change_Click(object sender, RoutedEventArgs e)
         {
 
-         
+
         }
 
-   
-    
+
+
 
         private void Add(object sender, RoutedEventArgs e)
         {
 
 
-      
 
 
-           
-         Contacts contact = new Contacts();
-           ContactList list = Resources["ContactList"] as ContactList;
 
-           Window1 window1 = new Window1(false,contact);
 
-                
-                 window1.ShowDialog();
+            Contacts contact = new Contacts();
+            ContactList list = Resources["ContactList"] as ContactList;
+
+            Window1 window1 = new Window1(false, contact);
+
+
+            window1.ShowDialog();
             if (window1.contacts != null)
             {
                 list.Contacts.Add(window1.contacts);
@@ -100,12 +148,12 @@ namespace BindingData
                 list.AdressList = cont.Adress;
                 list.PhoneList = cont.PhoneNumber;
                 list.SurnameList = cont.Surname;
-                Window1 window1 = new Window1(true,cont);
+                Window1 window1 = new Window1(true, cont);
 
                 window1.list = list;
-         
+
                 window1.ShowDialog();
-                list.Contacts[list.SelectedIndex]=(window1.contacts);
+                list.Contacts[list.SelectedIndex] = (window1.contacts);
             }
             catch
             {
@@ -116,21 +164,22 @@ namespace BindingData
         }
         private void Exit(object sender, RoutedEventArgs e)
         {
-           this.Close();    
+            this.Close();
         }
 
 
         private void LoadFromFileClick(object sender, RoutedEventArgs e)
         {
             ContactList list = Resources["ContactList"] as ContactList;
-      
-                XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Contacts>));
-            try { 
+
+            XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Contacts>));
+            try
+            {
                 using (StreamReader wr = new StreamReader($"{GetOpenFileName()}"))
                 {
                     list.Contacts = xs.Deserialize(wr) as ObservableCollection<Contacts>;
                 }
-            Dispatcher.Invoke(() => ls.ItemsSource = list.Contacts);
+                Dispatcher.Invoke(() => ls.ItemsSource = list.Contacts);
 
             }
             catch (Exception)
@@ -146,22 +195,22 @@ namespace BindingData
             try
             {
 
-        
-            XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Contacts>));
-            using (StreamWriter wr = new StreamWriter($"{GetSaveFileName()}"))
-            {
-                xs.Serialize(wr, list.Contacts);
-            }
+
+                XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Contacts>));
+                using (StreamWriter wr = new StreamWriter($"{GetSaveFileName()}"))
+                {
+                    xs.Serialize(wr, list.Contacts);
+                }
 
             }
             catch (Exception)
             {
 
-                
+
             }
         }
 
-
+*/
 
 
 
@@ -179,6 +228,11 @@ namespace BindingData
             saveFileDialog.ShowDialog();
             saveFileDialog.Filter = "xml Files | *.xml";
             return saveFileDialog.FileName;
+        }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 
@@ -199,6 +253,7 @@ namespace BindingData
 
         private static readonly DependencyProperty PhoneNumberProperty;
 
+       
 
         static Contacts()
         {
@@ -249,6 +304,43 @@ namespace BindingData
         private static readonly DependencyProperty AdressListProperty;
         private static readonly DependencyProperty PhoneNumberListProperty;
 
+        public AddCommand addComand;
+        public AddCommand DeleteCommand;
+        public AddCommand SaveCommand;
+        public AddCommand LoadCommand;
+        public AddCommand ChangeCommand;
+
+        public ContactList(){
+
+
+            addComand = new AddCommand(param => Add(), param => CanAdd());
+            DeleteCommand = new AddCommand(param => Delete(), param => CanDelete());
+            SaveCommand = new AddCommand(param => SaveC(), param => CanSave());
+            LoadCommand = new AddCommand(param => LoadC(), param => CanAdd());
+            ChangeCommand = new AddCommand(param => ChangeC(), param => CanDelete());
+
+        }
+        public ICommand AddCommand
+        {
+            get { return addComand; }
+        }
+        public ICommand Del
+        {
+            get { return DeleteCommand; }
+        }
+        public ICommand Save
+        {
+            get { return SaveCommand; }
+        }
+        public ICommand Load
+        {
+            get { return LoadCommand; }
+        }
+        public ICommand Change
+        {
+            get { return ChangeCommand; }
+        }
+      
         static ContactList()
         {
             SelectedIndexProperty = DependencyProperty.Register("SelectedIndex", typeof(int), typeof(ContactList));
@@ -256,6 +348,10 @@ namespace BindingData
             SurnameListProperty = DependencyProperty.Register("SurnameList", typeof(string), typeof(ContactList));
             AdressListProperty = DependencyProperty.Register("AdressList", typeof(string), typeof(ContactList));
             PhoneNumberListProperty = DependencyProperty.Register("PhoneList", typeof(string), typeof(ContactList));
+
+       
+
+                
         }
 
         public int SelectedIndex
@@ -293,6 +389,169 @@ namespace BindingData
 
 
         }
+
+         private void Add()
+        {
+            Contacts contact = new Contacts();
+       
+
+            Window1 window1 = new Window1(false, contact);
+
+           
+            window1.ShowDialog();
+            if (window1.contacts != null)
+            {
+               
+                Contacts.Add(window1.contacts);
+            }
+
+
+        }
+        private bool CanAdd()
+        {
+
+
+            return true;
+        }
+        private void Delete()
+        {
+
+               MessageBoxResult res = MessageBox.Show("Вы уверены что хотите удалить элемент?", "Точно?",
+              MessageBoxButton.YesNo, MessageBoxImage.Question);
+              if (res == MessageBoxResult.Yes) Contacts.RemoveAt(SelectedIndex);
+
+        }
+
+
+
+        private void ChangeC()
+        {
+
+
+
+         
+            if (SelectedIndex == -1)
+                return;
+            try
+            {
+                Contacts cont = Contacts[SelectedIndex];
+                NameList = cont.Name;
+                AdressList = cont.Adress;
+                PhoneList = cont.PhoneNumber;
+               SurnameList = cont.Surname;
+                Window1 window1 = new Window1(true, cont);
+
+                window1.list = this;
+
+                window1.ShowDialog();
+                Contacts[SelectedIndex] = (window1.contacts);
+            }
+            catch
+            {
+                return;
+            }
+
+
+        }
+     
+
+        private void SaveC()
+        {
+        
+
+            try
+            {
+
+
+                XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Contacts>));
+                using (StreamWriter wr = new StreamWriter($"{GetSaveFileName()}"))
+                {
+                    xs.Serialize(wr, Contacts);
+                }
+
+            }
+            catch (Exception)
+            {
+
+
+            }
+        }
+
+
+        private void LoadC()
+        {
+
+            ObservableCollection<Contacts> list;
+             XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Contacts>));
+            try
+            {
+                using (StreamReader wr = new StreamReader($"{GetOpenFileName()}"))
+                {
+                   list = xs.Deserialize(wr) as ObservableCollection<Contacts>;
+
+                }
+                foreach (var item in list)
+                {
+                    Contacts.Add(item);
+                }
+             
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private bool CanDelete()
+            {
+
+
+            if (SelectedIndex >= 0 && Contacts.Count>0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+           }
+
+        private bool CanSave()
+        {
+
+
+            if (Contacts.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
+
+        public string GetOpenFileName()
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "xml Files | *.xml";
+            openFileDialog.ShowDialog();
+            return openFileDialog.FileName;
+
+        }
+        public string GetSaveFileName()
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.ShowDialog();
+            saveFileDialog.Filter = "xml Files | *.xml";
+            return saveFileDialog.FileName;
+        }
+
 
     }
 

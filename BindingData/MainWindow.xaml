@@ -15,12 +15,12 @@
         <StackPanel DataContext="{StaticResource ContactList}" >
             <Menu Height="25" FontSize="15" DockPanel.Dock="Top" Background="White">
                 <MenuItem Header="Menu">
-                    <MenuItem  Header="Add" Click="Add"></MenuItem>
-                    <MenuItem  Header="Delete" Click="Delete_Click"></MenuItem>
-                    <MenuItem  Header="Change" Click="Change"></MenuItem>
-                    <MenuItem  Header="Save" Click="SaveToFileClick"></MenuItem>
-                    <MenuItem  Header="Load" Click="LoadFromFileClick"></MenuItem>
-                    <MenuItem Header="Exit" Click="Exit"></MenuItem>
+                    <MenuItem  Header="Add" Command="{Binding AddCommand}"></MenuItem>
+                    <MenuItem  Header="Delete" Command="{Binding Del}" ></MenuItem>
+                    <MenuItem  Header="Change" Command="{Binding Change}" ></MenuItem>
+                    <MenuItem  Header="Save" Command="{Binding Save}" ></MenuItem>
+                    <MenuItem  Header="Load" Command="{Binding Load}" ></MenuItem>
+                    <MenuItem Header="Exit" Click="Exit"  ></MenuItem>
                 </MenuItem>
             </Menu>
             <ListBox x:Name="ls" ItemsSource="{Binding Contacts}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}"
@@ -81,8 +81,8 @@
                 </ListBox.ItemsPanel>
                 <ListBox.ContextMenu>
                     <ContextMenu>
-                        <MenuItem Header="Удалить" Click="Delete_Click"></MenuItem>
-                        <MenuItem Header="Изменить" Click="Change"></MenuItem>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteCommand}"></MenuItem>
+                        <MenuItem Header="Изменить" Command="{Binding Change}"></MenuItem>
                     </ContextMenu>
                 </ListBox.ContextMenu>
             </ListBox>
