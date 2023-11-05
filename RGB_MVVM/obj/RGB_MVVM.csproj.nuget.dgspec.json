@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1STEP\\RGB_MVVM\\RGB_MVVM.csproj": {}
+    "D:\\1STEP\\Winforms2\\RGB_MVVM\\RGB_MVVM.csproj": {}
   },
   "projects": {
-    "D:\\1STEP\\RGB_MVVM\\RGB_MVVM.csproj": {
+    "D:\\1STEP\\Winforms2\\RGB_MVVM\\RGB_MVVM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1STEP\\RGB_MVVM\\RGB_MVVM.csproj",
+        "projectUniqueName": "D:\\1STEP\\Winforms2\\RGB_MVVM\\RGB_MVVM.csproj",
         "projectName": "RGB_MVVM",
-        "projectPath": "D:\\1STEP\\RGB_MVVM\\RGB_MVVM.csproj",
+        "projectPath": "D:\\1STEP\\Winforms2\\RGB_MVVM\\RGB_MVVM.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "D:\\1STEP\\RGB_MVVM\\obj\\",
+        "outputPath": "D:\\1STEP\\Winforms2\\RGB_MVVM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

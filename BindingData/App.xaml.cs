@@ -13,5 +13,13 @@ namespace BindingData
     /// </summary>
     public partial class App : Application
     {
+        private void OnStartup(object sender, StartupEventArgs e)
+        {
+
+
+            MainWindow view = new MainWindow();
+
+            view.Show();
+        }
     }
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\1STEP\RGB_MVVM\obj\Debug\net7.0-windows\
+D:\1STEP\Winforms2\RGB_MVVM\obj\Debug\net7.0-windows\
 RGB_MVVM
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\1STEP\RGB_MVVM\App.xaml
+D:\1STEP\Winforms2\RGB_MVVM\App.xaml
 1-487866684
 
 873734852
 198947991364
 View\MainWindow.xaml;
 
-True
+False
 
