@@ -22,7 +22,7 @@ namespace BindingData
     public partial class Window1 : Window
     {
         public  Contacts contacts {  get; set; }
-       public ContactList list {  get; set; }
+        public ContactList list {  get; set; }
 
 
         public bool isChange {  get; set; }
