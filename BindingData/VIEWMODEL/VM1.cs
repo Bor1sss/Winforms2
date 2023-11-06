@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows;
 using System.Xml.Serialization;
 using BindingData.MODEL;
+using BindingData.Commands;
 
 namespace BindingData.VIEWMODEL
 {

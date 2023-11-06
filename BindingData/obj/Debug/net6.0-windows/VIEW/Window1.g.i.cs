@@ -101,7 +101,7 @@ namespace BindingData {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BindingData;V1.0.0.0;component/view/window1.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BindingData;component/view/window1.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\VIEW\Window1.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
