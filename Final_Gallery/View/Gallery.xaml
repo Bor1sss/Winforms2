@@ -1,0 +1,115 @@
+﻿<Window x:Class="Final_Gallery.View.Gallery"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:view="clr-namespace:Final_Gallery.ViewModel"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Photo Gallery" Height="708" Width="908" MinHeight="450" MinWidth="645"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <ContentControl.DataContext>
+        <view:VM_Gallery/>
+    </ContentControl.DataContext>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+
+        <!-- Фотография с вертикальным ползунком для масштабирования -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150px"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50px"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="50px"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.ColumnSpan="2">
+                <Menu  Height="50"  Background="{DynamicResource PrimaryHueLightBrush}">
+                    <MenuItem Header="Файл">
+                        <MenuItem Header="Add Photo"
+                                  Command="{Binding AddCommand}"
+                                  />
+                        <MenuItem Header="Save Album"
+                                  Command="{Binding SaveCommand}"/>
+                        <MenuItem Header="Load Album"
+                                  Command="{Binding LoadCommand}"/>
+                        <MenuItem Header="Delete Photo"
+                                 Command="{Binding DelCommand}"/>
+                        <MenuItem Header="New Album"
+                                  
+           Command="{Binding NewAlbumCommand}"/>
+                        <Separator/>
+                        <MenuItem Header="Выход"
+                                  Command="{Binding ExitCommand}"/>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+            <!-- Информация о фотографии -->
+            <StackPanel Background="{DynamicResource PrimaryHueLightBrush}" Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,0,0" Width="105" RenderTransformOrigin="0.504,0.378" Height="Auto">
+                <TextBox  TextWrapping="Wrap" Text="{Binding PhotoFileName}" Margin="0,0,0,5" FontSize="18" IsReadOnly="True"/>
+                <TextBox TextWrapping="Wrap" Text="{Binding PhotoOwner}" Margin="0,0,0,5" FontSize="18" IsReadOnly="False"/>
+                <TextBox TextWrapping="Wrap" Text="{Binding PhotoDescription}" Margin="0,0,0,5" IsReadOnly="False" FontSize="18"/>
+            </StackPanel>
+
+            <DockPanel Grid.Column="1" Grid.Row="1" Margin="0,0,10,25"
+           MaxWidth="1000" MaxHeight="1000" >
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                  VerticalScrollBarVisibility="Auto">
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                        <Image Source="{Binding CurrentPhoto}" Stretch="Uniform" Margin="10">
+                            <Image.LayoutTransform>
+                                <ScaleTransform ScaleX="{Binding PhotoScale}" ScaleY="{Binding PhotoScale}"/>
+                            </Image.LayoutTransform>
+                        </Image>
+                    </StackPanel>
+                </ScrollViewer>
+            </DockPanel>
+
+
+
+            <Slider Grid.Column="0" Grid.Row="1" Orientation="Vertical" Minimum="0.05" Maximum="2" Value="{Binding PhotoScale}" 
+                    HorizontalAlignment="Right" VerticalAlignment="Center" Height="200"/>
+
+
+
+
+
+
+
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" Background="{DynamicResource MaterialDesignBackground}" Height="70" Grid.RowSpan="2" VerticalAlignment="Bottom">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Оценка:" VerticalAlignment="Center" FontSize="18"/>
+                    <ListBox Style="{DynamicResource MaterialDesignChoiceChipAccentListBox}" VerticalAlignment="Center" SelectedIndex="{Binding PhotoRating,Mode=TwoWay}" FontSize="15">
+                        <ListBoxItem>1☆</ListBoxItem>
+                        <ListBoxItem>2☆</ListBoxItem>
+                        <ListBoxItem>3☆</ListBoxItem>
+                        <ListBoxItem>4☆</ListBoxItem>
+                        <ListBoxItem>5☆</ListBoxItem>
+                    </ListBox>
+
+                </StackPanel>
+                <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="0 ,0,10,10">
+                    <Button Content="Пред. фото" Style="{DynamicResource MaterialDesignRaisedButton}" Command="{Binding PrevCommand}" Width="120"/>
+                    <Button Content="След. фото" Style="{DynamicResource MaterialDesignRaisedButton}" Width="120" Command="{Binding NextCommand}" Margin="10,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
