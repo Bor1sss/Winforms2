@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1FxQwixjHAmK0xTjF6apeREiphJMN9IylTCet7BnZzroi3zlyzDKaVclXaRW1CkZwZH59VJhkhndZQG4ZcN64w==",
+  "dgSpecHash": "E73FFKSU62/UyjwNyLZ7qEku7HwMh7H/QxUQ/Z3Mpgv04eoEVRBs8qhptGwwT9z1upMcXzFd3sH7d3k8hNHsKg==",
   "success": true,
-  "projectFilePath": "D:\\1STEP\\Cooking_Recipe\\Cooking_Recipe.csproj",
+  "projectFilePath": "D:\\1STEP\\Winforms2\\Cooking_Recipe\\Cooking_Recipe.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

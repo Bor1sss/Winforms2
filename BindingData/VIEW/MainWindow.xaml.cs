@@ -60,7 +60,7 @@ namespace BindingData
 /*
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            ContactList contactList = Resources["ContactList"] as ContactList;
+            ContactList  Resources["ContactList"] as ContactList;
             if (contactList.SelectedIndex != -1)
             {
                 MessageBoxResult res = MessageBox.Show("Вы уверены что хотите удалить элемент?", "Точно?",

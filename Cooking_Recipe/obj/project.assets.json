@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1STEP\\Cooking_Recipe\\Cooking_Recipe.csproj",
+      "projectUniqueName": "D:\\1STEP\\Winforms2\\Cooking_Recipe\\Cooking_Recipe.csproj",
       "projectName": "Cooking_Recipe",
-      "projectPath": "D:\\1STEP\\Cooking_Recipe\\Cooking_Recipe.csproj",
+      "projectPath": "D:\\1STEP\\Winforms2\\Cooking_Recipe\\Cooking_Recipe.csproj",
       "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-      "outputPath": "D:\\1STEP\\Cooking_Recipe\\obj\\",
+      "outputPath": "D:\\1STEP\\Winforms2\\Cooking_Recipe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
